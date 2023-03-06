@@ -1,5 +1,5 @@
 DIV {
-	border: 1px solid #000000
+	border: 1px solid #000000;
 }
 
 #Header {
@@ -11,13 +11,13 @@ DIV {
 }
 
 #MainContent {
-	width: 800px
+	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 #Footer {
-	width: 800px
+	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
 	height: 50px;
