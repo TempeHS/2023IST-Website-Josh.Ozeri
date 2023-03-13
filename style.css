@@ -38,3 +38,89 @@ DIV {
 	border: 1px solid red;
 
 }
+
+@media only screen and (max-width: 998px) {
+	#Footer, #MainContext, #Header {
+		width:100%;
+	}
+	
+	* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-3 {
+  color: #68DEA0;
+  border: 3px solid #68DEA0;
+  background-image: linear-gradient(to top, #68DEA0 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+}
+
+.button-3:hover {
+  color: #FFF;
+  background-position: 0% 100%;
+}
+
+.button-5 {
+  position: relative;
+}
+
+.button-5:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid #212121;
+  border-right: 3px solid #212121;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+}
+
+.button-5:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-top: 3px solid #212121;
+  border-left: 3px solid #212121;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+}
+
+.button-5:hover:after, .button-5:hover:before {
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  transition: all 0.4s, opacity 0.1s;
+  opacity: 1;
+}
