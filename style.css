@@ -42,14 +42,8 @@ DIV {
 @media only screen and (max-width: 998px) {
 	#Footer, #MainContext, #Header {
 		width:100%;
-	}
-	
-	* {
-  margin: 0;
-  padding: 0;
-  font-family: montserrat, sans-serif;
-  box-sizing: border-box;
 }
+	
 
 .button-container {
   display: flex;
